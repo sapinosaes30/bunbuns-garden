@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee5f0">
+  <meta name="description" content="A little garden, a little scrapbook, and a place for all the things worth keeping.">
+  <title>A Garden for Bunbun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Gochi+Hand&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="entry-screen" id="entryScreen">
+    <div class="entry-moon">☾</div>
+    <div class="entry-card">
+      <div class="entry-doodle">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</div>
+      <p class="eyebrow">A SMALL PLACE ON THE INTERNET</p>
+      <h1>A Garden<br><em>for Bunbun</em></h1>
+      <p class="entry-copy">I made you somewhere to wander.<br>Take your time. There are little things tucked everywhere.</p>
+      <button class="enter-button" id="enterButton">come on in <span>↗</span></button>
+      <div class="entry-foot">made slowly, with love <span>✿</span></div>
+    </div>
+    <span class="entry-flower flower-a">✿</span><span class="entry-flower flower-b">❀</span>
+    <span class="entry-star star-a">✧</span><span class="entry-star star-b">✦</span>
+    <div class="entry-hill hill-back"></div><div class="entry-hill hill-front"></div>
+  </div>
+
+  <main class="site hidden" id="site">
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Back to the beginning"><span class="mark-flower">✿</span> bunbun's garden</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#garden">garden</a><a href="#scrapbook">scrapbook</a><a href="#archive">little archive</a><a href="#nook">the cozy corner</a>
+      </nav>
+      <button class="sound-toggle" id="soundToggle" aria-label="Toggle little sounds" title="Little sounds">♫ <span>sound</span></button>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-spark">✧</span> a place that is yours</p>
+        <h2>Hi, <em>Bunbun.</em></h2>
+        <p class="hero-note">The world can be loud. This little corner doesn't have to be. There's a garden outside, a journal on the desk, and a few things I thought you might like.</p>
+        <a class="text-link" href="#garden">let's take a look <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a dreamy little garden">
+        <div class="hero-sun"></div><div class="hero-cloud cloud-one"></div><div class="hero-cloud cloud-two"></div>
+        <div class="hero-hill hill-one"></div><div class="hero-hill hill-two"></div>
+        <div class="hero-house"><div class="roof"></div><div class="house-body"><div class="window"></div><div class="door"></div></div><div class="house-step"></div></div>
+        <div class="hero-tree"><i></i><b></b><span></span></div>
+        <div class="hero-flower hf-one">✿</div><div class="hero-flower hf-two">✿</div><div class="hero-flower hf-three">✿</div>
+        <div class="hero-caption">somewhere soft to land <span>♡</span></div>
+      </div>
+      <div class="hero-bottom-note"><span>✳</span> no rush, no checklist, just wander.</div>
+    </section>
+
+    <section class="garden-section section-wrap" id="garden">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUT BACK, PAST THE LITTLE PATH</p><h2>The tulip patch</h2></div>
+        <p class="section-aside">Tap a bud and give it a little time to open.<br>Every flower gets to bloom in its own way.</p>
+      </div>
+      <div class="garden-board">
+        <div class="board-top"><span><i class="live-dot"></i> the garden is awake</span><span class="weather-note">soft breeze · lavender skies</span></div>
+        <div class="tulip-meadow" id="tulipMeadow">
+          <div class="meadow-sky"><span class="meadow-cloud c-one"></span><span class="meadow-cloud c-two"></span><span class="meadow-sun">☼</span></div>
+          <div class="distant-hill"></div><div class="near-hill"></div>
+          <div class="meadow-path"></div>
+          <button class="tulip tulip-one" data-flower="0" aria-label="Open the pink tulip"><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span><span class="bloom"><i></i><b></b><em></em></span></button>
+          <button class="tulip tulip-two" data-flower="1" aria-label="Open the lavender tulip"><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span><span class="bloom"><i></i><b></b><em></em></span></button>
+          <button class="tulip tulip-three" data-flower="2" aria-label="Open the cream tulip"><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span><span class="bloom"><i></i><b></b><em></em></span></button>
+          <button class="tulip tulip-four" data-flower="3" aria-label="Open the purple tulip"><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span><span class="bloom"><i></i><b></b><em></em></span></button>
+          <button class="tulip tulip-five" data-flower="4" aria-label="Open the pink tulip"><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span><span class="bloom"><i></i><b></b><em></em></span></button>
+          <button class="tulip tulip-six" data-flower="5" aria-label="Open the lavender tulip"><span class="stem"></span><span class="leaf leaf-left"></span><span class="leaf leaf-right"></span><span class="bloom"><i></i><b></b><em></em></span></button>
+          <span class="meadow-bunny">૮꒰ ˶• ༝ •˶꒱ა</span><span class="meadow-butterfly">୨୧</span>
+          <div class="meadow-sign">please be gentle<br>with growing things</div>
+          <div class="bloom-message" id="bloomMessage">the flowers are still sleepy. say hello to one ♡</div>
+        </div>
+        <div class="board-bottom"><span id="flowerStatus">a few buds are waiting for you</span><span>✿ tulips for my tulip girl</span></div>
+      </div>
+      <p class="hand-note">P.S. You don't have to find everything. The garden isn't going anywhere.</p>
+    </section>
+
+    <section class="scrapbook-section section-wrap" id="scrapbook">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE PHOTOS I KEEP COMING BACK TO</p><h2>Little pieces of us</h2></div>
+        <p class="section-aside">A few snapshots, kept just as they are.<br>Click one if you want a closer look.</p>
+      </div>
+      <div class="photo-wall">
+        <button class="photo polaroid p-one" data-photo="bunbun-glasses.jpg" data-description="There you are, looking quietly lovely behind those glasses. I like how a simple little picture can make me stop for a moment just to admire you.">
+          <span class="photo-image"><img src="assets/images/bunbun-glasses.jpg" alt="Andrea wearing glasses"></span><i class="tape tape-pink"></i>
+        </button>
+        <button class="photo polaroid p-two" data-photo="classroom-memory.jpg" data-description="A small school-day moment, the kind that might seem ordinary while it is happening. Somehow, these are the moments I end up wanting to keep.">
+          <span class="photo-image"><img src="assets/images/classroom-memory.jpg" alt="A candid school memory"></span><i class="tape tape-lilac"></i>
+        </button>
+        <button class="photo polaroid p-three" data-photo="bunbun-cozy.jpg" data-description="All bundled up and cozy. I hope you always get days where you can slow down, get comfortable, and feel safe enough to do absolutely nothing.">
+          <span class="photo-image"><img src="assets/images/bunbun-cozy.jpg" alt="Andrea tucked into a blanket"></span><i class="tape tape-cream"></i>
+        </button>
+        <button class="photo polaroid p-four" data-photo="school-stage.jpg" data-description="A glimpse of you in your school world, surrounded by people and things that make up your days. I hope you remember how much there is to be proud of.">
+          <span class="photo-image"><img src="assets/images/school-stage.jpg" alt="A school performance memory"></span><i class="tape tape-pink"></i>
+        </button>
+        <button class="photo polaroid p-five" data-photo="bunbun-silly.jpg" data-description="A little glimpse of your playful side. I don't think I'll ever get tired of seeing your expressions, your silly moments, or the many ways you make me smile.">
+          <span class="photo-image"><img src="assets/images/bunbun-silly.jpg" alt="A playful selfie of Andrea"></span><i class="tape tape-lilac"></i>
+        </button>
+        <div class="wall-note"><span class="note-heart">♡</span><p>I'd keep every ordinary moment if I could.</p><small>— a note from me</small></div>
+      </div>
+    </section>
+
+    <section class="archive-section section-wrap" id="archive">
+      <div class="archive-intro">
+        <div><p class="eyebrow">FROM THE DESK DRAWER</p><h2>Our little archive</h2></div>
+        <p>Some things are better kept in their original handwriting. These are the letters, rambles, apologies, and little pieces of us, just as they were written.</p>
+      </div>
+      <div class="archive-desk">
+        <div class="desk-decoration"><span>✿</span><span>♡</span><span>✧</span></div>
+        <div class="archive-list" id="archiveList" aria-label="Letters and journal entries"></div>
+        <div class="desk-footer"><span>kept safe in here</span><span>with love, always</span></div>
+      </div>
+      <p class="archive-footnote">The words are yours. I left them alone.</p>
+    </section>
+
+    <section class="cozy-section section-wrap" id="nook">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHEN IT'S RAINING OUTSIDE</p><h2>The cozy corner</h2></div>
+        <p class="section-aside">Shoes off. Blanket on. Stay as long as you like.</p>
+      </div>
+      <div class="cozy-room">
+        <div class="room-window"><div class="window-sky"><span class="window-moon">☾</span><i></i><i></i><i></i></div><div class="window-sill"></div><div class="rain" aria-hidden="true"></div></div>
+        <div class="room-shelf"><span class="shelf-book book-pink"></span><span class="shelf-book book-purple"></span><span class="shelf-book book-cream"></span><span class="shelf-bunny">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</span></div>
+        <div class="room-bed"><div class="pillow"></div><div class="blanket"></div><div class="bed-leg"></div></div>
+        <div class="room-rug"></div>
+        <div class="room-lamp"><span class="lamp-shade"></span><span class="lamp-stem"></span><span class="lamp-foot"></span></div>
+        <button class="room-note" id="roomNote"><span>✉</span><b>there's a note<br>on the nightstand</b><small>open it</small></button>
+        <div class="room-cat" id="roomPet" role="button" tabindex="0" aria-label="Pet the little bunny">૮꒰ ˶• ༝ •˶꒱ა</div>
+        <div class="room-caption" id="roomCaption">rain on the window, nothing urgent to do.</div>
+      </div>
+      <div class="nook-bottom">
+        <div class="music-card">
+          <div class="record-art"><div class="record"><span>♡</span></div></div>
+          <div class="music-copy"><p class="eyebrow">THE LITTLE RECORD PLAYER</p><h3>songs that remind me of you</h3><p>Pick one and let Spotify take it from here. No autoplay, just music when you want it.</p>
+            <div class="song-links">
+              <a href="https://open.spotify.com/search/The%20Ridleys" target="_blank" rel="noopener">The Ridleys <span>↗</span></a>
+              <a href="https://open.spotify.com/search/Ben%20%26%20Ben" target="_blank" rel="noopener">Ben&Ben <span>↗</span></a>
+              <a href="https://open.spotify.com/search/Kalapastangan" target="_blank" rel="noopener">Kalapastangan <span>↗</span></a>
+              <a href="https://open.spotify.com/search/Fortnight%20Taylor%20Swift" target="_blank" rel="noopener">Fortnight <span>↗</span></a>
+              <a href="https://open.spotify.com/search/Champagne%20Coast%20Blood%20Orange" target="_blank" rel="noopener">Champagne Coast <span>↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="tiny-shop">
+          <p class="eyebrow">A VERY IMPORTANT QUESTION</p>
+          <h3>What's the comfort order?</h3>
+          <div class="treats">
+            <button data-treat="Buldak, obviously. A little chaos in a bowl.">🍜 <span>Buldak</span></button>
+            <button data-treat="Konu Mini Crunch. Tiny snack, huge importance.">🍪 <span>Konu Mini Crunch</span></button>
+            <button data-treat="Milk tea, with all the little joys.">🧋 <span>Milk tea</span></button>
+            <button data-treat="Steak night. A very serious dinner plan.">🥩 <span>Steak</span></button>
+          </div>
+          <p class="treat-response" id="treatResponse">Pick a treat. I won't judge your answer.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-flower">✿</div>
+      <p>For all the little things that make you, you.</p>
+      <h2>Love you, <em>Bunbun.</em></h2>
+      <small>this garden will be here whenever you feel like visiting ♡</small>
+    </footer>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <section class="modal-paper" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="modal-flower">✿</div>
+      <p class="eyebrow" id="modalEyebrow">A LITTLE NOTE</p>
+      <h2 id="modalTitle">A note for you</h2>
+      <div class="modal-body" id="modalBody"></div>
+      <button class="modal-done" id="modalDone">fold it up gently <span>♡</span></button>
+    </section>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxDescription"></p>
+  </div>
+
+  <script src="archive-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
